@@ -8,22 +8,22 @@
     <title>Weather Dashboard</title>
 </head>
 <body>
-    <header class="d-flex flex-wrap justify-content-center">
-        <a href="" class="d-flex align-items-center text-dark">
+    <header class="d-flex flex-wrap justify-content-center py-3 border-bottom mx-0">
+        <a href="" class="d-flex align-items-center text-dark mb-3 mb-md-0 me-md-auto text-decoration-none">
             <svg class="bi me-2" width="50" height="40"><use xlink:href="#bootstrap"></use></svg>
-            <h1 class="btn- btn-light btn-lg">Weather Dashboard</h1>
+            <h1 class="fs-4 btn btn-light btn-lg">Weather Dashboard</h1>
         </a>
     </header>
     <main>
         <div id="main" class="">
             <div id="search" class="row justify-content-evenly">
-                <div id="input" class="container col-6">
+                <div id="input" class="container col-6 ps-5 pe-1 py-3">
                     <label for="city-search" class="form-label">City or ZIP Code</label>
                     <input type="city" class="form-control" id="user-input" aria-desrcibedby="city">
                     <div id="city" class="form-text">Cities require either both comma and state name, or state abbreviation.</div>
                         <button type="button" id="search-button" class="btn btn-primary btn-lg">Search</button>
                     </div>
-                    <div id="recent-searches-container" class="container col-6">
+                    <div id="recent-searches-container" class="container col-6 ps-1 pe-5 py-3">
                         <h3>Recently-Searched Cities:</h3>
                         <button id="city1-btn" type="button" class="btn btn-outline-primary"><span id="city1-txt"></span></button>
                         <button id="city2-btn" type="button" class="btn btn-outline-primary"><span id="city2-txt"></span></button>
