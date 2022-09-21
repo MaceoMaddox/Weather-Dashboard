@@ -68,8 +68,8 @@ var day3Desc = "";
 var day4Desc = "";
 var day5Desc = "";
 
-
 const apiKey = "3c56bb730a2bb2b8fa01960a277c9468";
+
 var userInput = '';
 var city;
 var state;
@@ -78,7 +78,7 @@ var cityState = city + "," + state + "," + countryCode;
 var zipCode;
 
 var urlFromZIP;
-var urlFromCityState = "https://api.openweathermap.org/data/2.5/weather?q=" + cityState + "&appid=" + apiKey;
+var urlFromCityState = // figure this out
 var currentURL;
 var forecastURL;
 
