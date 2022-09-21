@@ -62,4 +62,58 @@ var day3HumidityEl = document.getElementById("d3-humidity");
 var day4HumidityEl = document.getElementById("d4-humidity");
 var day5HumidityEl = document.getElementById("d5-humidity");
 
+var day1Desc = "";
+var day2Desc = "";
+var day3Desc = "";
+var day4Desc = "";
+var day5Desc = "";
+
+
 const apiKey = "3c56bb730a2bb2b8fa01960a277c9468";
+var userInput = '';
+var city;
+var state;
+var countryCode = "us";
+var cityState = city + "," + state + "," + countryCode;
+var zipCode;
+
+var urlFromZIP;
+var urlFromCityState = "https://api.openweathermap.org/data/2.5/weather?q=" + cityState + "&appid=" + apiKey;
+var currentURL;
+var forecastURL;
+
+var dataFromCityState;
+var dataFromZIP;
+var latitude;
+var longitude;
+
+var cityStateArr = [];
+var currentData;
+var cityName;
+var currentDate = moment().format('llll');
+var currentMain;
+var currentTemp;
+var currentWind;
+var currentHumidity;
+var currentUVindex;
+
+var forecastData;
+
+var forecastedHighTemps = [];
+
+var forecastDay1Date = new Date()
+var forecastDay2Date = new Date()
+var forecastDay3Date = new Date()
+var forecastDay4Date = new Date()
+var forecastDay5Date = new Date()
+
+var day1Temps = [];
+var day2Temps = [];
+var day3Temps = [];
+var day4Temps = [];
+var day5Temps = [];
+var day1HighTemp;
+var day2HighTemp;
+var day3HighTemp;
+var day4HighTemp;
+var day5HighTemp;
